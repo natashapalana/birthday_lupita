@@ -7,10 +7,10 @@ import java.util.Scanner;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 
-import name.toLowerCase;
+
 
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -100,9 +100,9 @@ public class bb {
 
         }
 
-        Scanner input2 = new Scanner(System.in);
+        
         System.out.println("Enter the partial name: ");
-        String name2 = input2.nextLine();
+        String name2 = input.nextLine();
         
 
         for (Map.Entry<String, String> entry : birthdayMap.entrySet() ) {
@@ -112,8 +112,6 @@ public class bb {
             
             //for (String value : birthdayMap.values()){
                 System.out.println("Enter the partial name: " + key +  ", " + "Birthday: "+ value);
-
-               
 
             }
 

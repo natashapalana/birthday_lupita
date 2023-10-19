@@ -89,60 +89,30 @@ public class bb {
         String birthday = birthdayMap.get(name);
 
         if (birthday != null) {
-            System.out.println("Enter the name: " + name + " "+ "Birthday: " + birthday);
+            System.out.println("Enter the  full name: " + name + " " + ", Birthday: " + birthday);
 
         } else {
             System.out.println("The name is unknown");
 
         }
 
-        
         System.out.println("Enter the partial name: ");
         String name2 = input.nextLine();
-        
 
-        for (Map.Entry<String, String> entry : birthdayMap.entrySet() ) {
+        // use hash maps
+        for (Map.Entry<String, String> entry : birthdayMap.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();
             if (key.toLowerCase().contains(name2.toLowerCase())) {
-            
-            //for (String value : birthdayMap.values()){
-                System.out.println("Enter the partial name: " + key +  ", " + "Birthday: "+ value);
+
+                System.out.println("Enter the partial name: " + key + ", " + "Birthday: " + value);
 
             }
 
-            
-
-
-            //for (String key : birthdayMap.keySet()){
-               // System.out.println("Enter the partial name: " + key +  "b-day: " );
-
-            
-            
-
-           
-
         }
-        
-        
-        
 
+        input.close();
 
-         input.close();
-
-        
-
-        // print user input
-        // System.out.println("name = " + name);
-
-    
-    
-
-
-}        
-
-    
-
-    // close the scanner
+    }
 
 }
